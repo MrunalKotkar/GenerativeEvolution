@@ -1,6 +1,6 @@
 # Image Generation Comparison: VAE · GAN · Diffusion
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mrunalkotkar-generativeevolution-app-main.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://generativeevolution.streamlit.app/)
 
 > Comparing three generative model families on **CIFAR-10** (32×32 RGB images).  
 

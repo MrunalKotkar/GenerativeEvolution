@@ -45,7 +45,7 @@ st.markdown("""
 <style>
 /* ── reduce default Streamlit side-margins, use full width ── */
 .block-container {
-  padding-top: 1.8rem !important;
+  padding-top: 3.5rem !important;
   padding-left: 2.5rem !important;
   padding-right: 2.5rem !important;
   max-width: 1300px !important;
@@ -242,7 +242,7 @@ dfs = load_metrics()
 
 # ── Hero ──────────────────────────────────────────────────────────────────────
 st.markdown("""
-<div class="hero-title">Generative Evolution: Evolution of Image Generation<br>from Autoencoders to Diffusion Models</div>
+<div class="hero-title">Generative Evolution: Evolution of Image Generation from Autoencoders to Diffusion Models</div>
 <div class="hero-sub">Comparing VAE, DCGAN, and DDPM for unconditional image generation on CIFAR-10 (32×32).</div>
 <div class="hero-auth">Mrunal Kotkar</div>
 <hr class="sec-div">
