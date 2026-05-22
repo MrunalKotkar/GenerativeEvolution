@@ -1,7 +1,6 @@
 # Image Generation Comparison: VAE · GAN · Diffusion
 
 > Comparing three generative model families on **CIFAR-10** (32×32 RGB images).  
-> Course project — CS 256 Machine Learning, Prof. Mark Stamp, SJSU.
 
 ---
 
@@ -13,23 +12,21 @@
 | GAN (DCGAN) | 100 | **31.93** | 6.94   | ~1.5 h (A100) |
 | Diffusion (DDPM) | 500 | **13.48** | **8.31** | ~18 h (A100) |
 
-> FID: lower is better · IS: higher is better · evaluated on 10 000 generated samples vs CIFAR-10 train set
+> FID: lower is better
+> IS: higher is better 
 
 ---
 
 ## Sample Outputs
 
 ### VAE
-<!-- Replace with actual GIF or grid image after generating samples -->
-`samples/vae/` — 50 pre-generated images
+![VAE Results](samples/vae/vae.png)
 
 ### GAN (DCGAN)
-<!-- Replace with actual GIF or grid image after generating samples -->
-`samples/gan/` — 50 pre-generated images
+![GAN Results](samples/gan/gan.png)
 
 ### Diffusion (DDPM)
-<!-- Replace with actual GIF or grid image after generating samples -->
-`samples/diffusion/` — 50 pre-generated images
+![Diffusion Results](samples/diffusion/diffusion.png)
 
 ---
 
@@ -65,10 +62,14 @@
 ---
 
 ## Training Curves
+VAE
+![VAE metrics](assets/evaluation_graphs/vae_metrics_vs_epochs.png)
 
-| VAE | GAN | Diffusion |
-|:---:|:---:|:---------:|
-| ![VAE metrics](assets/evaluation_graphs/vae_metrics_vs_epochs.png) | ![GAN metrics](assets/evaluation_graphs/gan_metrics_vs_epochs.png) | ![Diffusion metrics](assets/evaluation_graphs/diffusion_metrics_vs_epochs.png) |
+GAN
+![GAN metrics](assets/evaluation_graphs/gan_metrics_vs_epochs.png)
+
+Diffusion
+![Diffusion metrics](assets/evaluation_graphs/diffusion_metrics_vs_epochs.png) |
 
 ---
 
@@ -164,11 +165,3 @@ diff_generate("outputs/diffusion/diffusion_epoch_500.pth", n=16, out_path="diff_
 - EMA weights in the diffusion model provided noticeably sharper samples than the raw model weights.
 
 ---
-
-## Citation / References
-
-- Ho et al. (2020) — [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
-- Radford et al. (2016) — [DCGAN](https://arxiv.org/abs/1511.06434)
-- Kingma & Welling (2014) — [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
-- Nichol & Dhariwal (2021) — [Improved DDPM (cosine schedule)](https://arxiv.org/abs/2102.09672)
-- Seitzer (2020) — [pytorch-fid](https://github.com/mseitzer/pytorch-fid)
