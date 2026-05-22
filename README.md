@@ -1,15 +1,6 @@
----
-title: Image Generation Comparison
-emoji: 🎨
-colorFrom: blue
-colorTo: green
-sdk: streamlit
-sdk_version: 1.28.0
-app_file: app.py
-pinned: true
----
-
 # Image Generation Comparison: VAE · GAN · Diffusion
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mrunalkotkar-generativeevolution-app-main.streamlit.app)
 
 > Comparing three generative model families on **CIFAR-10** (32×32 RGB images).  
 
@@ -119,11 +110,17 @@ image-generation-comparison/
 
 ### 1. Install dependencies
 
+**Demo app only** (no GPU needed):
 ```bash
 pip install -r requirements.txt
 ```
 
-> GPU strongly recommended. Tested on Python 3.10+, PyTorch 2.1, CUDA 12.1.
+**Full training environment** (GPU strongly recommended):
+```bash
+pip install -r requirements_training.txt
+```
+
+> Tested on Python 3.10+, PyTorch 2.1, CUDA 12.1.
 
 ### 2. Run the Streamlit demo
 
