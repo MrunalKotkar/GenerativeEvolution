@@ -1,3 +1,14 @@
+---
+title: Image Generation Comparison
+emoji: 🎨
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: 1.28.0
+app_file: app.py
+pinned: true
+---
+
 # Image Generation Comparison: VAE · GAN · Diffusion
 
 > Comparing three generative model families on **CIFAR-10** (32×32 RGB images).  
